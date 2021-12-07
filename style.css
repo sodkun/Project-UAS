@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+  .h-md-100 {
+    height: 100vh;
+  }
+}
+.btn-round {
+  border-radius: 30px;
+}
+.bg-cyan {
+  background: #1f8095;
+}
+.bg-purple {
+  background: #5953ff;
+}
+.bg-biru {
+  background: #0a529d;
+}
+.text-biru {
+  color: #0a529d;
+}
+.text-purple {
+  color: #5953ff;
+}
+.text-cyan {
+  color: #1f8095;
+}
+.text-welcome {
+  width: 423px;
+  font-family: Poppins;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+}
+.btn-orange {
+  color: white;
+  background-color: #fe725d;
+}
+.btn-purple {
+  background-color: #5953ff;
+  color: white;
+}
+.btn-biru {
+  background-color: #0a529d;
+  color: white;
+}
+.m-pegawai {
+  margin-top: 15rem;
+}

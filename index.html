@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- My CSS -->
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Welcome Page</title>
+  </head>
+  <body>
+    <div class="d-md-flex h-md-100 align-items-center">
+      <!-- First Half -->
+      <div class="col-md-6 p-0 bg-white h-md-100">
+        <div class="text-cyan d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+          <div class="pt-5 pb-5">
+            <div class="text-wrap" style="width: 20em"><h2>Selamat Datang di Sistem Kepegawaian️ PT. Makmur Sejahtera</h2></div>
+            <img src="img/welcome.png" alt="" />
+            <p>silahkan login terlebih dahulu</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Half -->
+      <div class="col-md-6 p-0 bg-cyan h-md-100 loginarea">
+        <div class="text-light d-md-flex align-items-center h-md-100 p-5 justify-content-start">
+          <div class="py-5 ps-5">
+            <div class="admin">
+              <h4>Login Admin</h4>
+              <div class="text-wrap" style="width: 25em">
+                <p>Akses data milik admin. Untuk melihat data pegawai, data jabatan, data pelatihan, data wilayah, dan data menjabat Untuk melihat laporan absensi, laporan data pegawai, dan laporan gaji.</p>
+              </div>
+              <a class="btn btn-orange" href="login_admin.html" role="button">Login Admin</a>
+            </div>
+            <div class="m-pegawai">
+              <h4>Login Pegawai</h4>
+              <div class="text-wrap" style="width: 25em">
+                <p>Akses data milik pegawai. Untuk melihat profil data, pelatihan, dan rekap absensi.</p>
+              </div>
+              <a class="btn btn-orange" href="login_pegawai.html" role="button">Login Pegawai</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
