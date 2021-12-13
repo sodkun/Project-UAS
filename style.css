@@ -3,8 +3,17 @@
     height: 100vh;
   }
 }
-.btn-round {
-  border-radius: 30px;
+
+.btn-orange {
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: 550;
+}
+
+.btn-purple {
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: 550;
 }
 .bg-cyan {
   background: #1f8095;
@@ -24,12 +33,17 @@
 .text-cyan {
   color: #1f8095;
 }
-.text-welcome {
-  width: 423px;
+
+
+
+h4{
   font-family: Poppins;
-  font-weight: Regular;
-  font-size: 36px;
-  opacity: 1;
+  font-weight: 600;
+}
+
+h2, p{
+  font-family: Poppins;
+  font-weight: 400;
 }
 .btn-orange {
   color: white;
@@ -46,3 +60,4 @@
 .m-pegawai {
   margin-top: 15rem;
 }
+
