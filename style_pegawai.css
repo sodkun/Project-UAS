@@ -124,11 +124,10 @@
   }
 
   .konten{
-    position: absolute;
-    margin-top:10em;
-    margin-left: 6em;
-    top :10px;
-    right : 10em;
+    margin-top: 50em;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .rectangle {
     font-family: "Poppins";
@@ -279,14 +278,11 @@ color: #A7A7AE;
   height: 30px;
   left: 250px;
   top: 13px;
-  
   font-family: Cambria;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
   text-align: right;
-  
   color: #A7A7AE;
-
 }
