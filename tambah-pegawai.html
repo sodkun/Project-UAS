@@ -19,7 +19,7 @@
     </style>
     <title>Tambah Pegawai</title>
   </head>
-  <body style="background-color: rgba(245, 249, 255, 1); font-family: Poppins;">
+  <body style="background-color: rgba(245, 249, 255, 1); font-family: Poppins">
     <nav class="navbar navbar-light bg-skyblue">
       <div class="container">
         <button class="navbar-toggler openbtn" type="button" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
@@ -42,50 +42,57 @@
     </div>
     <!-- Begin Page Content -->
     <div class="container-fluid">
-      <div class="row mt-4">
+      <div class="row mt-4 justify-content-center" >
         <!-- konten -->
-        <div class="fs-4 fw-bold text-center">Master Pegawai</div>
-        <div class="col-10 offset-1 my-3" style="background-color: #fff">
-          <!-- Table Isi -->
-          <div class="col-5 offset-1 mt-5">
-            <form>
-              <div class="mb-3">
-                <input type="Nama" placeholder="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-              </div>
-              <div class="mb-3">
-                <input type="NIP" placeholder="NIP" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Tempat / Tanggal lahir" placeholder="Tempat / Tanggal lahir" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Agama" placeholder="Agama" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Jenis kelamin" placeholder="Jenis kelamin" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Nomor Telepon" placeholder="Nomor Telepon" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Alamat" placeholder="Alamat" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Kelurahan" placeholder="Kelurahan" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Kode Pos" placeholder="Kode Pos" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3">
-                <input type="Jabatan" placeholder="Jabatan" class="form-control" id="exampleInputPassword1" />
-              </div>
-            </form>
+        <div class="fs-4 fw-bold text-center">Tambah Pegawai</div>
+        <div class="col-2" style="background-color: #fff">
+            <img class="img-profil ms-5 mt-5" src="img/avatar.png" width="148" />
+            <a class="btn btn-outline-secondary ms-5 mt-3" href="#" role="button">Upload Foto</a>
           </div>
-          <!-- Tombol -->
-          <div class="mx-4 my-5 float-end">
+          <div class="col-3" style="background-color: #fff">
+              <div class="mt-5 mb-3">
+                <input type="text" class="form-control" id="nama" aria-describedby="nama" placeholder="Nama" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="nip" aria-describedby="nip" placeholder="NIP" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="ttl" aria-describedby="ttl" placeholder="Tempat/Tanggal Lahir" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="agama" aria-describedby="agama" placeholder="Agama" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="jekel" aria-describedby="jekel" placeholder="Jenis Kelamin" />
+              </div>
+              <div class="mb-3">
+                <div class="text-coklat">Nomor HP</div>
+                <input type="text" class="form-control" id="hp" aria-describedby="hp" placeholder="Nomor HP" />
+              </div>
+              <div class="mb-3">
+                <div class="text-coklat">Alamat</div>
+                <input type="text" class="form-control" id="alamat" aria-describedby="alamat" placeholder="Alamat" />
+              </div>
+          </div>
+          <div class="col-3" style="background-color: #fff">
+              <div class="mt-5 mb-3">
+                <input type="text" class="form-control" id="kelurahan" aria-describedby="kelurahan" placeholder="Kelurahan" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="pos" aria-describedby="pos" placeholder="Kode Pos" />
+              </div>
+              <div>
+                <input type="text" class="form-control" id="jabatan" aria-describedby="jabatan" placeholder="Jabatan" />
+              </div>
+              <!-- Tombol -->
+          <div class="mx-4 mb-5 float-end" style="margin-top: 17em;">
             <a class="btn btn-outline-primary mx-3" href="master-pegawai.html" role="button">Cancel</a>
-            <button type="button" class="btn btn-primary">OK</button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
+        </div>
+      </div>
+          </div>
+          
         </div>
       </div>
       <!-- /.container-fluid -->
