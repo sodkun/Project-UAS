@@ -17,13 +17,13 @@
     <style>
       @import url('https:////fonts.googleapis.com/css?family=PT+Sans');
     </style>
-    <title>Master Pelatihan</title>
+    <title>Master Menjabat</title>
   </head>
-  <body style="background-color: rgba(245, 249, 255, 1); font-family: Poppins;">
+  <body style="background-color: rgba(245, 249, 255, 1)">
     <nav class="navbar navbar-light bg-skyblue">
       <div class="container">
         <button class="navbar-toggler openbtn" type="button" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
-        <a class="navbar-brand fw-bold fs-4" href="#">Master Pelatihan</a>
+        <a class="navbar-brand fw-bold fs-4" href="#">Master Menjabat</a>
         <div id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -44,11 +44,11 @@
       <a href="master-jabatan.html"><i class="fas fa-fw fa-clipboard-list"></i>Master Jabatan</a>
       <a href="master-pelatihan.html"><i class="fas fa-fw fa-suitcase"></i>Master Pelatihan</a>
       <a href="master-wilayah.html"><i class="fas fa-fw fa-crosshairs"></i>Master Wilayah</a>
-      <a href="master-menjabat.html"><i class="fas fa-fw fa-th-list"></i>Master Manjabat</a>
+      <a href="master-menjabat.html"><i class="fas fa-fw fa-th-list"></i>Master Menjabat</a>
       <a href="master-akun.html"><i class="fas fa-fw fa-address-card"></i>Akun Pegawai</a>
       <a href="laporan-absensi.html"><i class="fas fa-fw fa-list-ol"></i>Laporan Absensi</a>
       <a href="laporan-data.html"><i class="fas fa-fw fa-file-signature"></i>Laporan Data Pegawai</a>
-      <a href="laporan-gaji.html"><i class="fas fa-fw fa-dollar-sign"></i>Laporan Gaji</a>
+      <a href="laporan-gajii.html"><i class="fas fa-fw fa-dollar-sign"></i>Laporan Gaji</a>
       <a href="login_admin.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
     </div>
     <!-- Begin Page Content -->
@@ -58,13 +58,12 @@
         <div class="col-2 offset-1">
           <div class="col-auto">
             <div class="input-group mb-2">
-              <input type="text" class="form-control rounded" id="caripelatihan" placeholder=" Cari Pelatihan" />
+              <input type="text" class="form-control rounded" id="carimenjabat" placeholder=" Cari Jabatan" />
               <div class="input-group-prepend">
                 <div class="input-group-text"><a href="#" style="color: rgb(180, 180, 180)" class="bi bi-search" role="button"></a></div>
               </div>
             </div>
           </div>
-
           <!-- Tables Menu -->
           <div class="row">
             <div class="col-12">
@@ -73,24 +72,24 @@
                   <tbody>
                     <tr>
                       <td role="button">
-                        <a href="#" class="text-black" style="text-decoration: none">
-                          <div class="fs-5 fw-bold">Semua Data</div>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td role="button">
                         <a href="master-menjabat.html" class="text-black" style="text-decoration: none">
-                          <div class="fs-5 fw-bold">Direktur Utama</div>
-                          <div class="fs-5 fw-bold">(DU)</div>
+                          <div class="fs-5 fw-bold py-3">Semua Data</div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td role="button">
+                        <a href="data-direktur.html" class="text-black" style="text-decoration: none">
+                          <div class="fs-5 fw-bold pt-2">Direktur Utama</div>
+                          <div class="fs-5 fw-bold pb-2">(DU)</div>
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td role="button">
                         <a href="#" class="text-black" style="text-decoration: none">
-                          <div class="fs-5 fw-bold">Direktur Keamanan</div>
-                          <div class="fs-5 fw-bold">(DK)</div>
+                          <div class="fs-5 fw-bold pt-2">Direktur Keamanan</div>
+                          <div class="fs-5 fw-bold pb-2">(DK)</div>
                         </a>
                       </td>
                     </tr>
@@ -105,8 +104,8 @@
                     <tr>
                       <td role="button">
                         <a href="#" class="text-black" style="text-decoration: none">
-                          <div class="fs-5 fw-bold">Supervisor</div>
-                          <div class="fs-5 fw-bold">(SPVSR)</div>
+                          <div class="fs-5 fw-bold pt-2">Supervisor</div>
+                          <div class="fs-5 fw-bold pb-2">(SPVSR)</div>
                         </a>
                       </td>
                     </tr>
@@ -119,7 +118,7 @@
                       <a class="page-link">&laquo;</a>
                     </li>
                     <li class="page-item"><a class="page-link text-black" href="#">&lt;</a></li>
-                    <li class="page-item"><a class="page-link text-black" href="#">1/1</a></li>
+                    <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
                     <li class="page-item"><a class="page-link text-black" href="#">&gt;</a></li>
                     <li class="page-item">
                       <a class="page-link text-black" href="#">&raquo;</a>
@@ -184,7 +183,7 @@
                   <a class="page-link">&laquo;</a>
                 </li>
                 <li class="page-item"><a class="page-link text-black" href="#">&lt;</a></li>
-                <li class="page-item"><a class="page-link text-black" href="#">1/1</a></li>
+                <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
                 <li class="page-item"><a class="page-link text-black" href="#">&gt;</a></li>
                 <li class="page-item">
                   <a class="page-link text-black" href="#">&raquo;</a>
@@ -194,7 +193,7 @@
           </div>
           <!-- Tombol -->
           <div class="mx-4 mt-5 float-end">
-            <a class="btn btn-outline-primary" href="edit-menjabat.html" role="button">Edit</a>
+            <a class="btn btn-outline-primary" href="edit-master-menjabat.html" role="button">Edit</a>
             <a class="btn btn-outline-primary mx-3" href="#" role="button">Hapus</a>
           </div>
         </div>
