@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- My CSS -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/76a99a243b.js" crossorigin="anonymous"></script>
+    <style>
+      @import url('https:////fonts.googleapis.com/css?family=PT+Sans');
+    </style>
+    <title>Master Wilayah</title>
+  </head>
+  <body style="background-color: rgba(245, 249, 255, 1)">
+    <nav class="navbar navbar-light bg-skyblue">
+      <div class="container">
+        <button class="navbar-toggler openbtn" type="button" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand fw-bold fs-4" href="#">Master Wilayah</a>
+        <div id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active lh-1" aria-current="page" href="#">
+                <span class="m-0 p-0 d-none d-lg-inline text-gray-600 text-wrap"> Tony Stark </span>
+                <img class="img-profile rounded-circle" src="img/avatar.png" width="40" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="admin.html"><i class="fa fa-fw fa-home"></i>Beranda</a>
+      <a href="master-pegawai.html"><i class="fa fa-fw fa-user"></i>Master Pegawai</a>
+      <a href="master-jabatan.html"><i class="fas fa-fw fa-clipboard-list"></i>Master Jabatan</a>
+      <a href="master-pelatihan.html"><i class="fas fa-fw fa-suitcase"></i>Master Pelatihan</a>
+      <a href="master-wilayah.html"><i class="fas fa-fw fa-crosshairs"></i>Master Wilayah</a>
+      <a href="master-menjabat.html"><i class="fas fa-fw fa-th-list"></i>Master Menjabat</a>
+      <a href="master-akun.html"><i class="fas fa-fw fa-address-card"></i>Akun Pegawai</a>
+      <a href="laporan-absensi.html"><i class="fas fa-fw fa-list-ol"></i>Laporan Absensi</a>
+      <a href="laporan-data.html"><i class="fas fa-fw fa-file-signature"></i>Laporan Data Pegawai</a>
+      <a href="laporan-gajii.html"><i class="fas fa-fw fa-dollar-sign"></i>Laporan Gaji</a>
+      <a href="login_admin.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+    </div>
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+      <!-- Pencarian -->
+      <div class="row mt-4">
+        <div class="col-2 offset-1">
+          <div class="col-auto">
+            <div class="input-group mb-2">
+              <input type="text" class="form-control rounded" id="cariwilayah" placeholder=" Cari Wilayah" />
+              <div class="input-group-prepend">
+                <div class="input-group-text"><a href="#" style="color: rgb(180, 180, 180)" class="bi bi-search" role="button"></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Tables Menu -->
+          <div class="row">
+            <div class="col-12">
+              <div class="col-auto text-center">
+                <table class="table table-hover rounded" id="dev-table" style="background-color: #fff">
+                  <tbody>
+                    <tr>
+                      <td role="button">
+                        <a href="master-wilayah.html" class="text-black" style="text-decoration: none">
+                          <div class="fs-5 fw-bold my-4">Provinsi Jawa Tengah</div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td role="button">
+                        <a href="jawatimur.html" class="text-black" style="text-decoration: none">
+                          <div class="fs-5 fw-bold my-4">Provinsi Jawa Timur</div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td role="button">
+                        <a href="#" class="text-black" style="text-decoration: none">
+                          <div class="fs-5 fw-bold my-4">Provinsi Jawa Barat</div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td role="button">
+                        <a href="#" class="text-black" style="text-decoration: none">
+                          <div class="fs-5 fw-bold my-4">Provinsi DKI Jakarta</div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td role="button">
+                        <a href="#" class="text-black" style="text-decoration: none">
+                          <div class="fs-5 fw-bold my-4">Provinsi Banten</div>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- Pagination -->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link">&laquo;</a>
+                    </li>
+                    <li class="page-item"><a class="page-link text-black" href="#">&lt;</a></li>
+                    <li class="page-item"><a class="page-link text-black" href="#">1/20</a></li>
+                    <li class="page-item"><a class="page-link text-black" href="#">&gt;</a></li>
+                    <li class="page-item">
+                      <a class="page-link text-black" href="#">&raquo;</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- konten -->
+        <div class="col-8" style="background-color: #fff">
+          <div class="fs-1 fw-bold text-center mt-4 ms-5">Provinsi Jawa Tengah</div>
+          <!-- Table Isi -->
+          <div class="col-auto text-center">
+            <table class="table table-hover rounded" id="dev-table" style="background-color: #fff">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>NIP</th>
+                  <th>Kabupaten/Kota</th>
+                  <th>Kecamatan</th>
+                  <th>Kode Pos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>123123125</td>
+                  <td>Kota Semarang</td>
+                  <td>Pedurungan</td>
+                  <td>50192</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>123123126</td>
+                  <td>Kota Salatiga</td>
+                  <td>Sidorejo</td>
+                  <td>50711</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>123123127</td>
+                  <td>Kota Surakarta</td>
+                  <td>Banjarsari</td>
+                  <td>57120</td>
+                </tr>
+                <tr>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                </tr>
+                <tr>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                  <td class="py-3"></td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link">&laquo;</a>
+                </li>
+                <li class="page-item"><a class="page-link text-black" href="#">&lt;</a></li>
+                <li class="page-item"><a class="page-link text-black" href="#">1/1</a></li>
+                <li class="page-item"><a class="page-link text-black" href="#">&gt;</a></li>
+                <li class="page-item">
+                  <a class="page-link text-black" href="#">&raquo;</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById('mySidenav').style.width = '250px';
+      }
+
+      function closeNav() {
+        document.getElementById('mySidenav').style.width = '0';
+      }
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
