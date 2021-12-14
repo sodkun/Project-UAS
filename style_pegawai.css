@@ -124,10 +124,9 @@
   }
 
   .konten{
-    margin-top: 50em;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 8em;
   }
   .rectangle {
     font-family: "Poppins";
@@ -142,8 +141,8 @@
 
   .rectangle2 {
     font-family: "Poppins";
-    height:540px;
-    width: 540px;
+    height:482px;
+    width: 520px;
     border-radius: 30px;
     border: 1px solid #DCDCEB;
     line-height: 2rem;
@@ -152,9 +151,10 @@
   }
 
   .rectangle3 {
+    
     font-family: "Poppins";
-    height:540px;
-    width: 540px;
+    height:482px;
+    width: 520px;
     border-radius: 30px;
     border: 1px solid #DCDCEB;
     line-height: 2rem;
@@ -278,11 +278,14 @@ color: #A7A7AE;
   height: 30px;
   left: 250px;
   top: 13px;
+  
   font-family: Cambria;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
   text-align: right;
+  
   color: #A7A7AE;
+
 }
